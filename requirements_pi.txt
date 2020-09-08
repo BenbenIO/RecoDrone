@@ -1,0 +1,23 @@
+audioread==2.1.8
+cycler==0.10.0
+decorator==4.4.2
+joblib==0.16.0
+kiwisolver==1.2.0
+librosa==0.5.1
+llvmlite==0.32.0
+matplotlib==3.3.0
+numba==0.49.0
+numpy==1.19.1
+opencv-contrib-python==4.1.0.25
+pandas==1.1.0
+Pillow==7.2.0
+PyAudio==0.2.11
+pyparsing==2.4.7
+python-dateutil==2.8.1
+pytz==2020.1
+resampy==0.2.2
+scikit-learn==0.23.2
+scipy @ file:///home/pi/Documents/Camera_test/scipy_whl/scipy-1.5.1-cp37-cp37m-linux_armv7l.whl
+six==1.15.0
+tflite-runtime @ https://dl.google.com/coral/python/tflite_runtime-2.1.0.post1-cp37-cp37m-linux_armv7l.whl
+threadpoolctl==2.1.0
