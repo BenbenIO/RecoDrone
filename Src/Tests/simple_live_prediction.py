@@ -7,6 +7,9 @@ import tflite_runtime.interpreter as tflite
 import time
 import argparse
 
+DRONE_STATE = ['DISARMED',
+                'ARMED']
+
 def extract_feature(x, FFT_SIZE=256):
     # Extract simple feature (abs to get the magnetude)
     mfccs = librosa.stft(librosa.util.normalize(x), n_fft=FFT_SIZE, window='hamming')
@@ -81,7 +84,9 @@ def main():
             print("Feature ~ Inference in {} ms.".format(elapsed_time*1000))
             print("Output data: {}".format(output_data))
 
-            ## TODO postprocessing from the output.
+            ## Post processing:
+            current_state = DRONE_STATE[np.argmax(output_data)]
+            print("Current STATE: {}".format(current_state))
 
             # Resume the audio stream
             audio_stream.start_stream()
