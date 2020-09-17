@@ -1,8 +1,16 @@
-# Ignore
+# Ignore:
 ## Data
 .wav
 .csv
 
 ## Model
-.h5
+*.h5
 .tflite
+
+## Video
+*.avi
+*.mp4
+
+## python
+.pyc
+*.pyc
