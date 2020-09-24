@@ -16,7 +16,7 @@ class Camera:
         self.thread = None
         self.vid_name = "init_name.mp4"
         self.saving_directory = saving_directory
-        self.check_directory()
+        self.check_directory(self.saving_directory)
         self.out = None
 
         # Get camera - Using default camera settings
@@ -26,10 +26,10 @@ class Camera:
         self.fps = self.cap.get(5)
         print("Getting video: {} ({}/{}) at {} fps.".format(src, self.width, self.height, self.fps))
 
-    def check_directory(self):
+    def check_directory(self, saving_directory):
         # Check if saving directory exist, create if not.
-        if not os.path.isdir(self.saving_directory):
-            os.makedirs(self.saving_directory)
+        if not os.path.isdir(saving_directory):
+            os.makedirs(saving_directory)
             return(True)
         else:
             return(False)
@@ -52,7 +52,10 @@ class Camera:
             print("[!] Already recording; {}".format(self.vid_name))
 
         else:
-            self.vid_name = name
+            date_hour = time.strftime("%Y_%b_%d_%Hh", time.localtime())
+            date_directory = self.saving_directory + date_hour + '/'
+            self.check_directory(date_directory)
+            self.vid_name = date_directory + name
             self.recording = True
             self.out = cv2.VideoWriter(self.vid_name, self.fourcc, self.fps, (int(self.width), int(self.height)))
             self.thread = threading.Thread(target=self.record_loop)
