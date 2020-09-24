@@ -1,0 +1,10 @@
+[Unit]
+Description=Will start DroneReco
+After=network.target
+
+[Service]
+ExecStart=/home/pi/DroneReco.sh
+User=pi
+
+[Install]
+WantedBy=multi-user.target

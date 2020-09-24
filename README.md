@@ -1,12 +1,14 @@
 # RecoDroneTest [WIP]
 Record Drone Test is a simple project to automatically record test video of drone.
 
+![git_from_video](Video/flight_test.gif)
+
 ## Motivation
 
-> Tired of having to manage the RC control / 2-3 terminals and a camera during your development ??!
+> Tired of having to manage the RC controls / 2-3 terminals and a camera during your development ??!
 
-Video review for drone test is a real advantages and can lead to faster improvement and reporting.
-However it also require some attention, focus and time. The proposed solution aims to automate the acquisition process by starting recording image based on sound.
+Video review for drone development is a real advantage and can lead to faster improvement and better reporting.
+However it also require some attention, focus and time. The proposed solution aims to automate the acquisition process by starting recording video based on sound.
 Indeed, a drone armed is really noisy and we can use these sound to trigger the recording.
 
 Such system can:
@@ -26,6 +28,9 @@ Data exploration and training related notebooks.
 
 #### - Src
 Code and script running on the Raspberry Pi.
+
+#### - Other
+Additionnal setup: start at boot / FTPserver / Zipping-cleaning script / ...
 
 ## Setup
 
