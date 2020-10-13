@@ -1,12 +1,13 @@
 """
     Script to record audio from USB camera:
     run with:
-    python test_record_audio.py -s 6 -n test.wav
+    python Record_Audio.py.py -s 6 -n test.wav
 """
 
 import pyaudio
 import wave
 import argparse
+import time
 
 def find_index_usb_audio(audio, name="BUFFALO"):
     for dev_i in range(audio.get_device_count()):
@@ -36,7 +37,7 @@ def main():
     chunk = 4096                    # 2^12 samples for buffer
     record_secs = args.secs         # seconds to record
     wav_out = args.wav_name         # name of .wav file
-    
+
     print("Stream parameters:")
     print(" {} | {} | {} | {} | {} | {}".format(form_1, chans, samp_rate, chunk, record_secs, wav_out))
     stream = audio.open(format = form_1,

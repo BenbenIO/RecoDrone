@@ -1,4 +1,4 @@
-# RecoDroneTest [WIP]
+# RecoDroneTest
 Record Drone Test is a simple project to automatically record test video of drone.
 
 ![git_from_video](Video/flight_test.gif)
@@ -35,9 +35,10 @@ Additionnal setup: start at boot / FTPserver / Zipping-cleaning script / ...
 ## Setup
 
 #### Hardware
-- Raspberry Pi 3B+.
+- Raspberry Pi 3B+ with large SD card *(128Gb)*.
 - Camera with Microphone: [BUFFALO - BSW180ABK*](https://www.buffalo.jp/product/detail/bsw180abk.html)
 - Power supply.
+- RPi casing *(Optional)*
 
 **Note:** I used this camera (somewhat expensive) because it was lying around, have a microphone integrated and the **180deg** FoV match the application to capture the drone. I would like to test out other microphone and camera, so please feel free to give your feedback on the hardware.
 
@@ -57,3 +58,11 @@ pip install -r requirements_pi.txt
 with *scipy* and *tflite-runtime* installed from .whl
 
 ## Other
+
+#### Casing
+I design a specific casing that feature RPi easy fixation, LED opening and fan fixation. File available in [thingiverse](https://www.thingiverse.com/thing:4612562).
+
+![3D casing](Others/casing.jpg)
+
+#### Issue and commit
+Every kind of feedback are welcome. Please do not hesitate asking question and if you want to implement new features.
