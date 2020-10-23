@@ -8,7 +8,7 @@ Record Drone Test is a simple project to automatically record test video of dron
 > Tired of having to manage the RC controls / 2-3 terminals and a camera during your development ??!
 
 With RecoDrone, just powered your RPi and a simple NeuralNetwork will detect when a drone is arm and start recording.
-You can then download the video on the ```ftp://RPi_domainename```, and start analysis and reporting.
+A blinking LED will indicate that the recording is ongoing. Then, you can download the video on the ```ftp://RPi_domainename```, and start analysis and reporting.
 
 Video review for drone development is a real advantage and can lead to faster improvement and better reporting.
 However it also require some attention, focus and time. The proposed solution aims to automate the acquisition process by starting recording video based on sound.
@@ -32,6 +32,7 @@ Such system can:
 - Raspberry Pi 3B+ with large SD card *(128Gb)*.
 - Camera with Microphone: [BUFFALO - BSW180ABK*](https://www.buffalo.jp/product/detail/bsw180abk.html)
 - Power supply.
+- Basic LED, 330Ohm resistance and a bit a cable *(Optional)*
 - RPi casing *(Optional)*
 
 
