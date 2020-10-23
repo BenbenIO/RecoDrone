@@ -1,4 +1,4 @@
-# Others - {WIP}
+# Others
 
 ## Start at boot
 The project is way more convenient if the script is running at boot. Here is how to setup simple script and run it at boot:
