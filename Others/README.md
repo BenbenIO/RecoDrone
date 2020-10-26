@@ -11,7 +11,7 @@ If you install using virtualenv, you will have to activate it, then navigate to 
 source /home/pi/.zshrc
 sleep 2
 
-# Goto diretory
+# Goto directory
 cd /home/pi/Documents/Src/
 sleep 1
 

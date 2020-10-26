@@ -12,12 +12,12 @@ A blinking LED will indicate that the recording is ongoing. Then, you can downlo
 
 Video review for drone development is a real advantage and can lead to faster improvement and better reporting.
 However it also require some attention, focus and time. The proposed solution aims to automate the acquisition process by starting recording video based on sound.
-Indeed, a drone armed is really distincs sound and can be used to train model that will trigger the recording.
+Indeed, a drone armed is really distinct sound and can be used to train model that will trigger the recording.
 
 Such system can:
 - Automate the test recording.
 - Help development by having video analyse data.
-- Provide additionnal material for report and project communication.
+- Provide additional material for report and project communication.
 - Help learning more about AI on Edge and sound processing.
 
 
@@ -34,7 +34,6 @@ Such system can:
 - Power supply.
 - Basic LED, 330Ohm resistance and a bit a cable *(Optional)*
 - RPi casing *(Optional)*
-
 
 
 **Note:** I used this camera because it was lying around, have a microphone integrated and the **180deg** FoV match the application to capture the drone. I would like to test out other microphone and camera, so please feel free to give your feedback on the hardware.
@@ -54,7 +53,7 @@ pip install -r requirements_pi.txt
 ```
 with *scipy* and *tflite-runtime* installed from .whl
 
-## Porject Structure
+## Project Structure
 
 #### - Data
 
